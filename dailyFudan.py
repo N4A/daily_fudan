@@ -195,7 +195,7 @@ def get_account():
 if __name__ == '__main__':
     logging.info('start to run checkin......')
     uid, psw = get_account()
-    logging.info("ACCOUNT：" + uid + " " + psw)
+    logging.info("ACCOUNT：" + uid + "," + psw)
     zlapp_login = 'https://uis.fudan.edu.cn/authserver/login?' \
                   'service=https://zlapp.fudan.edu.cn/site/ncov/fudanDaily'
     daily_fudan = Zlapp(uid, psw, url_login=zlapp_login)
