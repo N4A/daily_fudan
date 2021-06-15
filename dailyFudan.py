@@ -193,6 +193,7 @@ def get_account():
     return uid, psw
 
 if __name__ == '__main__':
+    logging.info('start to run checkin......')
     uid, psw = get_account()
     # logging.debug("ACCOUNT：" + uid + psw)
     zlapp_login = 'https://uis.fudan.edu.cn/authserver/login?' \
